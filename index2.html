@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=<>, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>1.Write a blog un the Difference between document and window objects</h2>
+    <p>
+        The Encompassing One: Window Object
+
+Imagine a theater stage. The entire stage, along with the actors, props, and curtains, represents the window object. It serves as the outermost entity, encompassing the entire browser window or tab, including the web page content and functionalities. Here's what it provides:
+
+Global Scope: 
+          
+It acts as the global namespace, housing variables and functions accessible from anywhere within the page.
+Browser Interactions: It offers methods for interacting with the browser itself, like opening new windows, setting alerts, and navigating history.
+Event Handling: It manages events like clicks, key presses, and page loads, allowing you to respond to user interactions.
+Screen Information: It exposes details about the user's screen, such as dimensions and resolution.
+The Content King: Document Object
+
+Now, move the spotlight to the actual drama happening on the stage. This content represents the document object, residing within the window object. It holds the structure and elements of the web page, such as paragraphs, images, and forms. Let's explore its domain:
+
+DOM Representation:
+          It acts as the Document Object Model (DOM), a tree-like structure representing the web page's HTML elements.
+Element Manipulation: It provides methods for accessing, modifying, and creating HTML elements, enabling dynamic content changes.
+Styling and Properties: It allows access to element styles and properties, like color, size, and position.
+Event Handling: It handles events specific to the web page content, like form submissions and element interactions.
+Key Distinctions: Understanding the Differences
+
+While both objects play crucial roles, their differences define their specific uses:
+
+Scope: 
+        window has a global scope, while document is more localized to the web page content.
+Purpose:
+        window focuses on browser interactions and global functionalities, while document deals with manipulating the web page itself.
+Properties:
+       window has properties related to the browser and screen, while document has properties related to the HTML elements.
+Methods:
+       window offers methods for navigation, alerts, and screen access, while document provides methods for element manipulation, styling, and event handling.
+A Symbiotic Relationship: Working Together
+
+Remember, these objects are not isolated entities. They work together seamlessly. You can access the document object through the window.document property, allowing you to leverage the power of both in your web development endeavors.
+
+Mastering the Craft: Leveraging Their Strengths
+
+Understanding these differences empowers you to write more efficient and targeted code. Use the window object for global functionalities and the document object for manipulating the web page content. Remember, choosing the right tool for the job leads to cleaner, more maintainable code.
+    </p>
+    <h2>2.codekata practise</h2>
+    <p>
+        
+const age = 30;
+const pi = 3.14159;
+const bigNumber = 9007199254740991n; // Bigint data type (ES2020)
+
+
+const name = "Alice";
+const greeting = 'Hello, world!';
+const multiline = `This is a
+multiline string!`;
+
+
+const isTrue = true;
+const isFalse = false;
+
+
+const fruits = ["apple", "banana", "orange"];
+const mixedArray = [1, "two", true];
+
+
+const person = {
+  name: "Bob",
+  age: 40,
+  hobbies: ["reading", "hiking"],
+};
+
+
+function add(a, b) {
+  return a + b;
+}
+
+
+const uniqueSymbol = Symbol("mySymbol");
+
+
+console.log(typeof age);         
+console.log(typeof name);         
+console.log(typeof isTrue);      
+console.log(typeof fruits);     
+console.log(typeof person);     
+console.log(typeof add);         
+console.log(typeof uniqueSymbol); 
+
+// Type coercion example
+console.log(10 + "20"); 
+console.log(typeof (10 + "20"));
+    </p>
+</body>
+</html>
